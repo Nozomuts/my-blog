@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 const name = 'Nozomu';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Nozomuのブログ';
 
 const Layout = ({ children, home }: { children: ReactNode; home?: boolean }) => {
   return (
@@ -48,7 +48,7 @@ const Layout = ({ children, home }: { children: ReactNode; home?: boolean }) => 
       {!home && (
         <div className={styles.backToHome}>
           <Link href='/'>
-            <a>← Back to home</a>
+            <a>← ホームに戻る</a>
           </Link>
         </div>
       )}

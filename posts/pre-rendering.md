@@ -1,11 +1,11 @@
 ---
-title: 'Two Forms of Pre-rendering'
+title: '事前レンダリングの2つの形式'
 date: '2020-01-01'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Next.jsには2つの形式の事前レンダリングがあります。**静的生成**と**サーバーサイドレンダリング**です。違いはページのHTMLを生成するタイミングにあります。
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+**静的生成**は、ビルド時にHTMLを生成するプリレンダリング方式です。プリレンダリングされた HTML は各リクエストで再利用されます。
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+**サーバーサイドレンダリング** は、各リクエストで HTML を生成する事前レンダリングメソッドです。
+重要なのは、Next.jsでは各ページで使用する事前レンダリングフォームを選択できることです。ほとんどのページにスタティック生成を使用し、その他のページにはサーバーサイドレンダリングを使用することで、「ハイブリッド」なNext.jsアプリを作成することができます。

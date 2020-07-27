@@ -1,19 +1,21 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
+title: '静的生成 vs サーバーサイドレンダリング'
 date: '2020-01-02'
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+**静的生成とサーバーサイドレンダリングを使用する場合**
 
-You can use Static Generation for many types of pages, including:
+**静的生成**(データの有無に関わらず)を可能な限り使用することをお勧めします。なぜなら、あなたのページは一度構築され、CDNによって提供されるため、サーバーがリクエストのたびにページをレンダリングするよりもはるかに速くなります。
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+静的生成は以下のような多くのタイプのページに使用することができます。
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+* マーケティングページ
+* ブログ記事一覧
+* Eコマースの製品リスト
+* ヘルプとドキュメント
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+自問自答してみてください。"ユーザーのリクエストに先立って、このページをプリレンダリングできますか？" と自問自答する必要があります。答えがイエスであれば、静的生成を選択すべきです。
 
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+一方で、ユーザーのリクエストに先立ってページをプリレンダリングできない場合、スタティック生成は良いアイデアではありません。もしかしたら、あなたのページは頻繁に更新されるデータを表示していて、ページの内容はリクエストのたびに変化しているかもしれません。
+
+そのような場合は、**サーバーサイドレンダリング**を使うことができます。レンダリングは遅くなりますが、プリレンダリングされたページは常に最新の状態で表示されます。あるいは、プリレンダリングをスキップして、クライアントサイドの JavaScript を使用してデータを入力することもできます。
