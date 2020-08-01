@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.scss';
 import Head from 'next/head';
 import Link from 'next/link';
 
-const name = 'Nozomu';
+const name = 'Nozomuのブログ';
 export const siteTitle = 'Nozomuのブログ';
 
 const Layout = ({ children, home }: { children: ReactNode; home?: boolean }) => {
